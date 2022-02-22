@@ -39,7 +39,7 @@ chrome.commands.onCommand.addListener((command) => {
                     chrome.scripting.executeScript({
                         target: { tabId: tabs[0].id },
                         func: () => {
-                            document.querySelector('.swiper-slide-active').querySelector('span[data-e2e=like-icon]').parentElement.click()
+                            document.querySelector('span[data-e2e=browse-like-icon]').parentElement.click()
                         }
                     });
                 }
