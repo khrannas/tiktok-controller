@@ -1,0 +1,46 @@
+{
+    "name": "Tiktok Global Controller",
+    "version": "0.0.0.1",
+    "manifest_version": 3,
+    "description": "Control tiktok from anywhere",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "tabs",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://*.tiktok.com/*"
+    ],
+    "commands": {
+        "Next": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+1"
+            },
+            "description": "Next",
+            "global": true
+        },
+        "Previous": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+2"
+            },
+            "description": "Previous",
+            "global": true
+        },
+        "Love": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+3"
+            },
+            "description": "Love",
+            "global": true
+        },
+        "Play/Pause": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+4"
+            },
+            "description": "Play/Pause",
+            "global": true
+        }
+    }
+}

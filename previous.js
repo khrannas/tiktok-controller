@@ -1,0 +1,1 @@
+document.querySelector('button[data-e2e=arrow-right]').click()
